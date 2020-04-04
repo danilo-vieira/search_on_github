@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box; /* Faz com que o padding dos elementos seja anexado na sua largura e altura e não somados*/
+  font-family: 'Roboto', sans-serif;
+}
+
+#user-tools {
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+  box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+#user-tools h1 {
+  margin-left: 24%;
+  margin-bottom: 36px;
+}
+
+#user-tools input {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px; 
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 20px;
+}
+
+#user-tools button {
+  background-color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  border-radius: 5px;
+  padding-right: 10%;
+  padding-left: 10%;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  transition: 300ms;
+}
+
+#user-tools button:hover {
+  background-color: #70CCAA;
+  opacity: 70%;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.show {
+  display: none;
+}
+
+#app {
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+
+  box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+#app ul li {
+  background-color: #D9FFF1;
+  border-radius: 8px;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5);
+
+  padding: 22px;
+  margin: 15px 0;
+
+  list-style-type: none;
+  color: #000000;
+  line-height: 24px;
+}
+
+#app ul li a {
+  text-decoration: none;
+  background-color: #70CCAA;
+
+  margin-top: 15px;
+
+  font-weight: 700;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  color: black;
+  transition: 300ms;
+}
+
+#app ul li a:hover {
+  background-color: #5AA388;
+  opacity: 90%;
+}
