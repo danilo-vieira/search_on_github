@@ -4,7 +4,6 @@ var buttonElement = document.querySelector('div#user-tools button');
 
 function searchRepos() {
   var github_user = inputElement.value;
-  inputElement.value = '';
   inputElement.focus();
 
   return new Promise(function(resolve, reject) {
@@ -62,8 +61,17 @@ buttonElement.onclick =
 () => searchRepos()
   .then(function(response) {
     document.querySelector('div#app').classList.toggle('show');
+
+    var li = document.createElement('li');
+    var liText = document.createTextNode('Carregando...');
+
+    li.appendChild(liText);
+    listElement.appendChild(li);
+
     var repo_list = response || [];
-    renderRepos(repo_list);
+    setTimeout(function() {
+      renderRepos(repo_list);
+    }, 1000);
   })
   .catch(function(error) {
     alert(error);
